@@ -7,7 +7,7 @@ class Solution(object):
         # Dictionary roman map to store Roman numeral values
         roman_map = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
         
-        # Initialize result to 0
+        # Initialize result to 0 (to prevent initial/residual garbage values )
         total = 0
         
         # Traverse through the string
