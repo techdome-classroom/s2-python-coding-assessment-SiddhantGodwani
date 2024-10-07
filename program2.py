@@ -4,7 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        # Dictionary to store roman values
+        #Dictionary to store roman values
         roman_dict = {'I': 1, 
                      'V': 5,
                      'X': 10,
@@ -13,7 +13,7 @@ class Solution(object):
                      'D': 500,
                      'M': 1000}
         
-        # Initializing result to 0 (to prevent initial/residual garbage values in variable )
+        #Initializing result to 0 (to prevent initial/residual garbage values in variable )
         total = 0
         
         # Traverse the string
