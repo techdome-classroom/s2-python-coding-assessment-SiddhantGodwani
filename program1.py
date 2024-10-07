@@ -22,7 +22,7 @@ class Solution(object):
                 # It's an opening bracket, push it to the stack
                 stack.append(char)
         
-        # If the stack=empty(at the end), it means all brackets were matched properly
+        # If the stack=empty(at the end), it means all brackets were matched properly by my code
         return not stack
         
         
