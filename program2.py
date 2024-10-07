@@ -16,7 +16,7 @@ class Solution(object):
         #Initializing result to 0 (to prevent initial/residual garbage values in variable )
         total = 0
         
-        # Traverse the string
+        #Traverse the string
         for i in range(len(s)):
             # If the current numeral is less than the next one, subtract its value
             if i < len(s) - 1 and roman_dict[s[i]] < roman_dict[s[i + 1]]:
