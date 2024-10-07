@@ -12,7 +12,7 @@ class Solution(object):
         for char in s:
             # If it's a closing bracket
             if char in mapping:
-                # Pop from stack if it's not empty, else assign a dummy value "empty"
+                # Pop from stack if it's not empty, else assign a dummy value ie. "empty"
                 top_element = stack.pop() if stack else '#'
                 
                 # Check if the popped "]" element matches the corresponding opening bracket "["
