@@ -1,0 +1,40 @@
+name: Autograding Tests
+'on':
+- push
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: program1.py
+      id: program1-py
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: program1.py
+        setup-command: sudo -H pip3 install pytest
+        command: pytest test1.py
+        timeout: 10
+        max-score: 20
+    - name: program2.py
+      id: program2-py
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: program2.py
+        setup-command: sudo -H pip3 install pytest
+        command: pytest test2.py
+        timeout: 10
+        max-score: 20
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        PROGRAM1-PY_RESULTS: "${{steps.program1-py.outputs.result}}"
+        PROGRAM2-PY_RESULTS: "${{steps.program2-py.outputs.result}}"
+      with:
+        runners: program1-py,program2-py
