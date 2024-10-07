@@ -10,7 +10,7 @@ class Solution(object):
         # Initialize result to 0 (to prevent initial/residual garbage values )
         total = 0
         
-        # Traverse through the string
+        # Traverse the string
         for i in range(len(s)):
             # If the current numeral is less than the next one, subtract its value
             if i < len(s) - 1 and roman_map[s[i]] < roman_map[s[i + 1]]:
