@@ -16,7 +16,7 @@ class Solution(object):
                 top_element = stack.pop() if stack else '#'
                 
                 #Check if the popped "]" element matches the corresponding opening bracket "["
-                if mapping[char] != top_element:
+                if brackets[char] != top_element:
                     return False
             else:
                 #An opening bracket -> push it to the stack
