@@ -8,7 +8,22 @@ class Solution(object):
         stack = []
         # Dictionary to map closing brackets to their corresponding opening brackets
         mapping = {')': '(', '}': '{', ']': '['}
+        # Iterate through each character in the string
+        for char in s:
+            # If it's a closing bracket
+            if char in mapping:
+                # Pop from stack if it's not empty, else assign a dummy value
+                top_element = stack.pop() if stack else '#'
+                
+                # Check if the popped element matches the corresponding opening bracket
+                if mapping[char] != top_element:
+                    return False
+            else:
+                # It's an opening bracket, push it to the stack
+                stack.append(char)
         
+        # If the stack is empty at the end, it means all brackets were matched properly
+        return not stack
         
         
         pass
