@@ -19,7 +19,7 @@ class Solution(object):
                 if mapping[char] != top_element:
                     return False
             else:
-                # It's an opening bracket, push it to the stack otherwose
+                # It's an opening bracket, push it to the stack otherwosed
                 stack.append(char)
         
         # If the stack=empty(at the end), it means all brackets were matched properly by my code
