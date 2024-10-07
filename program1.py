@@ -4,6 +4,9 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
+        # Create a stack to keep track of opening brackets
+        stack = []
+        
         
         
         
