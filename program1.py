@@ -14,7 +14,7 @@ class Solution(object):
                 if not stack or stack.pop() != bracket_pairs[char]:
                     return False
         
-        return len(stack) == 0a
+        return len(stack) == 0
 
 
 
