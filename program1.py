@@ -6,11 +6,11 @@ class Solution(object):
         """
         # Creating a stack to keep track of opening brackets
         stack = []
-        # Dictionary to map closing brackets to their corresponding opening brackets
+        #Dictionary to map closing brackets to their corresponding opening brackets
         mapping = {')': '(', '}': '{', ']': '['}
-        # Iterate through each character in the string entered and
+        #Iterate through each character in the string entered and
         for char in s:
-            # If it's a closing bracket
+            #If it's a closing bracket
             if char in mapping:
                 #Pop from stack if it's not empty, else assign a dummy value ie. "empty" -># here
                 top_element = stack.pop() if stack else '#'
