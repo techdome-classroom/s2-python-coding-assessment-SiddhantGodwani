@@ -5,8 +5,7 @@ class Solution(object):
         :rtype: int
         """
         # Dictionary to store Roman numeral values
-        roman_map = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 
-                     'C': 100, 'D': 500, 'M': 1000}
+        roman_map = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
         
         # Initialize result to 0
         total = 0
