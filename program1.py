@@ -8,7 +8,7 @@ class Solution(object):
         stack = []
         # Dictionary to map closing brackets to their corresponding opening brackets
         mapping = {')': '(', '}': '{', ']': '['}
-        # Iterate through each character in the string
+        # Iterate through each character in the string entered and
         for char in s:
             # If it's a closing bracket
             if char in mapping:
