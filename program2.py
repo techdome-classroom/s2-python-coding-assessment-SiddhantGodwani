@@ -4,7 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        # Dictionary roman map to store Roman numeral values
+        # Dictionary to store Roman numeral values
         roman_dict = {'I': 1, 
                      'V': 5,
                      'X': 10,
