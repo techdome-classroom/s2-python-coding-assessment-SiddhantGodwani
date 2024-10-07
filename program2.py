@@ -13,7 +13,7 @@ class Solution(object):
                      'D': 500,
                      'M': 1000}
         
-        # Initializing result to 0 (to prevent initial/residual garbage values )
+        # Initializing result to 0 (to prevent initial/residual garbage values in variable )
         total = 0
         
         # Traverse the string
