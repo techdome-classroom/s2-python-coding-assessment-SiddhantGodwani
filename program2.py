@@ -23,7 +23,7 @@ class Solution(object):
                 total -= roman_dict[s[i]]
             else:
                 # Otherwise, add its value
-                total += roman_map[s[i]]
+                total += roman_dict[s[i]]
         
         return total
         
