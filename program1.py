@@ -11,7 +11,7 @@ class Solution(object):
         #Iterate through each character in the string entered and
         for char in s:
             #If it's a closing bracket
-            if char in mapping:
+            if char in brackets:
                 #Pop from stack if it's not empty, else assign a dummy value ie. "empty" -># here
                 top_element = stack.pop() if stack else '#'
                 
